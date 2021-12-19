@@ -26,5 +26,9 @@ public class GM : MonoBehaviour
     {
         Application.LoadLevel(Name);
     }
+    void Quit()
+    {
+        Application.Quit();
+    }
 
 }

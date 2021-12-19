@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 12472906}
   - component: {fileID: 12472905}
   - component: {fileID: 12472904}
+  - component: {fileID: 12472907}
   m_Layer: 5
   m_Name: re play Button
   m_TagString: Untagged
@@ -202,7 +203,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 12472905}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 12472907}
+        m_MethodName: NextSence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &12472905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +253,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12472902}
   m_CullTransparentMesh: 0
+--- !u!114 &12472907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12472902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d9ce92305233ea4a98aa2b99255fb12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: menu
 --- !u!1 &512490693
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,6 +356,7 @@ GameObject:
   - component: {fileID: 870997485}
   - component: {fileID: 870997484}
   - component: {fileID: 870997483}
+  - component: {fileID: 870997486}
   m_Layer: 5
   m_Name: 'go back Button  '
   m_TagString: Untagged
@@ -400,7 +426,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 870997484}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 870997486}
+        m_MethodName: NextSence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &870997484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,6 +475,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870997481}
   m_CullTransparentMesh: 0
+--- !u!114 &870997486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870997481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d9ce92305233ea4a98aa2b99255fb12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: game
 --- !u!1 &877411057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,7 +1324,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2136042344}
   - component: {fileID: 2136042343}
-  - component: {fileID: 2136042342}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1282,14 +1331,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &2136042342
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2136042341}
-  m_Enabled: 1
 --- !u!20 &2136042343
 Camera:
   m_ObjectHideFlags: 0
