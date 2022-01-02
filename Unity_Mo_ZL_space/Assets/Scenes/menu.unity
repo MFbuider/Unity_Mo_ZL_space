@@ -716,6 +716,7 @@ GameObject:
   - component: {fileID: 460676756}
   - component: {fileID: 460676758}
   - component: {fileID: 460676757}
+  - component: {fileID: 460676759}
   m_Layer: 5
   m_Name: new game
   m_TagString: Untagged
@@ -783,6 +784,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460676755}
   m_CullTransparentMesh: 0
+--- !u!114 &460676759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460676755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e200df80ccc8b9d43b0ab474db5bd837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CHMassage: 
+  ENMassage: 
+  CHTexts: []
+  ENTexts: []
+  TextID: 1
 --- !u!1 &469028814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,6 +2268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScreenSizeDropdown: {fileID: 1652260033}
+  LanguageDropdown: {fileID: 1914947327}
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -2389,7 +2408,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUITGAME
+  m_Text: QUIT
 --- !u!222 &963966473
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3030,6 +3049,7 @@ GameObject:
   - component: {fileID: 1228160439}
   - component: {fileID: 1228160438}
   - component: {fileID: 1228160437}
+  - component: {fileID: 1228160441}
   m_Layer: 5
   m_Name: space star
   m_TagString: Untagged
@@ -3131,6 +3151,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228160435}
   m_CullTransparentMesh: 0
+--- !u!114 &1228160441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228160435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e200df80ccc8b9d43b0ab474db5bd837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CHMassage: 
+  ENMassage: 
+  CHTexts: []
+  ENTexts: []
+  TextID: 0
 --- !u!1 &1314379855
 GameObject:
   m_ObjectHideFlags: 0
@@ -4203,7 +4240,18 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963194226}
+        m_MethodName: ChangeLanguaged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1914947328
 MonoBehaviour:

@@ -21,9 +21,14 @@ public class menu : MonoBehaviour
 
         [Header("控制解析度的下拉選單")]
         public Dropdown ScreenSizeDropdown;
+        [Header("語言的下拉選單")]
+        public Dropdown LanguageDropdown;
+        //保存LanguageDropdow的數值
+        static public int LanguagelD;
 
-        // Start is called before the first frame update
-        void Start()
+
+    // Start is called before the first frame update
+    void Start()
         {
             //BGM => 背景音樂
             //GameObject.Find("物件名稱")
@@ -80,4 +85,9 @@ public class menu : MonoBehaviour
             Screen.SetResolution(480, 800, false);
         }
     }
+    public void ChangeLanguaged()
+    {
+        LanguagelD = LanguageDropdown.value;
+    }
+
 }
